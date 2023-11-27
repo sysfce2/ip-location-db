@@ -20086,7 +20086,9 @@
 2602:fc20::,2602:fc20:fff:ffff:ffff:ffff:ffff:ffff,US
 2602:fc21::,2602:fc21:ff:ffff:ffff:ffff:ffff:ffff,US
 2602:fc22::,2602:fc22:fff:ffff:ffff:ffff:ffff:ffff,US
-2602:fc23::,2602:fc23:fff:ffff:ffff:ffff:ffff:ffff,CA
+2602:fc23::,2602:fc23:11f:ffff:ffff:ffff:ffff:ffff,CA
+2602:fc23:120::,2602:fc23:12f:ffff:ffff:ffff:ffff:ffff,US
+2602:fc23:130::,2602:fc23:fff:ffff:ffff:ffff:ffff:ffff,CA
 2602:fc24::,2602:fc24:fff:ffff:ffff:ffff:ffff:ffff,US
 2602:fc25::,2602:fc25:fff:ffff:ffff:ffff:ffff:ffff,US
 2602:fc26::,2602:fc26:fff:ffff:ffff:ffff:ffff:ffff,US
@@ -60430,8 +60432,7 @@
 2a12:dd47:8f76::,2a12:dd47:8f76:ffff:ffff:ffff:ffff:ffff,KR
 2a12:dd47:8f77::,2a12:dd47:8f81:ffff:ffff:ffff:ffff:ffff,AQ
 2a12:dd47:8f82::,2a12:dd47:8f82:ffff:ffff:ffff:ffff:ffff,MO
-2a12:dd47:8f83::,2a12:dd47:8f90:ffff:ffff:ffff:ffff:ffff,AQ
-2a12:dd47:8f91::,2a12:dd47:8f91:ffff:ffff:ffff:ffff:ffff,MC
+2a12:dd47:8f83::,2a12:dd47:8f91:ffff:ffff:ffff:ffff:ffff,AQ
 2a12:dd47:8f92::,2a12:dd47:8f92:ffff:ffff:ffff:ffff:ffff,MN
 2a12:dd47:8f93::,2a12:dd47:8fa6:ffff:ffff:ffff:ffff:ffff,AQ
 2a12:dd47:8fa7::,2a12:dd47:8fa7:ffff:ffff:ffff:ffff:ffff,PK
