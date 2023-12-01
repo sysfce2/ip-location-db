@@ -18,7 +18,7 @@
 
 ## CSV format
 
-This project provides ip to location database in csv format. If you need MMDB format, please use [geoip-builder](https://github.com/safing/geoip-builder).
+This project provides ip to location database in csv format. If you need MMDB format, please use [mmdbmeld](https://github.com/safing/mmdbmeld).
 
 #### ASN csv format
 `ip_range_start, ip_range_end, as_number, as_organization`
@@ -138,7 +138,7 @@ But the above list is too long, thus, we write down the recommendation.
 ## Tools & Applications
 
 Here is a list of tools and applications that can work with these databases:
-- [`safing/geoip-builder`](https://github.com/safing/geoip-builder): Create and customize MMDB file from this database.
+- [`safing/mmdbmeld`](https://github.com/safing/mmdbmeld): Create and customize MMDB file from this database.
 - [`realchandan/Ip-geo-API`](https://github.com/realchandan/Ip-geo-API): Go written HTTP server for IPv4 and IPv6 lookups.
 - [`EP-u-NW/ip_location_server`](https://github.com/EP-u-NW/ip_location_server): A GRPC and HTTP server mapping IP addresses to locations. Supports IPv4 and IPv6 and automatic dataset updates.
 
