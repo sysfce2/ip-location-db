@@ -1,6 +1,6 @@
 {
   "name": "@ip-location-db/geolite2-city",
-  "version": "2.3.2023120119",
+  "version": "2.3.2023120318",
   "description": "Ip to location database",
   "keywords": [
     "ip",
