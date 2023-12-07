@@ -134,6 +134,12 @@ But the above list is too long, thus, we write down the recommendation.
 - If you need asn database, we recommend `asn` database.
 
 
+## Libraries to use database
+
+We can use libraries in many languages by using `mmdb` format.
+Some of them are distributed in [`HostByBelle/IP-Geolocation-DB`](https://github.com/HostByBelle/IP-Geolocation-DB) and we can convert csv to mmdb by [`safing/mmdbmeld`](https://github.com/safing/mmdbmeld).
+For example, we can use [maxmind developed libraries](https://github.com/maxmind) which are written in python, PHP, perl, ruby, .net, C, java, .net, and so on.
+
 
 ## Tools & Applications
 
