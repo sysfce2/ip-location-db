@@ -9,7 +9,8 @@
     "ipv4",
     "ipv6",
     "location",
-    "country"
+    "country",
+    "mmdb"
   ],
   "license": "SEE LICENSE IN GEOLITE2_LICENSE AND GEOLITE2_EULA",
   "author": "sapics",
