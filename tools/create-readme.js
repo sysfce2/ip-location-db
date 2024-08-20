@@ -48,7 +48,19 @@ function mergeTemplates(templates, vars) {
 				templateContent += '\n\n${field-explanation-country_code}\n'
 			}
 
-			templateContent += '\n\n## Referenced Database and License\n\n'
+			var isCC0 = false, isPDDL = false
+
+			if(templatePath.startsWith('iptoasn')){
+				isPDDL = true
+			} else if(templatePath.startsWith('geo-') || templatePath.startsWith('asn-country')){
+				isCC0 = true
+			}
+
+			if(isCC0 || isPDDL){
+				templateContent += '\n\n## Referenced Database\n\n'
+			} else {
+				templateContent += '\n\n## Referenced Database and License\n\n'
+			}
 			var isMulti = true
 			for(var i = 0; i < info.length; i++){
 				var key = info[i]
@@ -66,6 +78,12 @@ function mergeTemplates(templates, vars) {
 
 			if(isMulti){
 				templateContent += '${merge-db}\n'
+			}
+
+			if(isCC0){
+				templateContent += '\n\n${license-cc0}\n'
+			} else if(isPDDL){
+				templateContent += '\n\n${license-pddl}\n'
 			}
 		}
 

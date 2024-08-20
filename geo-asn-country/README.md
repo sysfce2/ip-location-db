@@ -2,7 +2,7 @@
 
 ## Download
 
-| Database | Type | Licence | Updated | IPv4 | IPv6 | IPv4-num | IPv6-num |
+| Database | Type | License | Updated | IPv4 | IPv6 | IPv4-num | IPv6-num |
 |---|---|---|---|---|---|---|---|
 | [GeoFeed + ASN](https://github.com/sapics/ip-location-db/tree/main/geo-asn-country/)<br><br>[![npm version](https://img.shields.io/npm/v/@ip-location-db/geo-asn-country?color=success&style=flat-square&label=CSV)](https://www.npmjs.com/package/@ip-location-db/geo-asn-country)<br>[![npm version](https://img.shields.io/npm/v/@ip-location-db/geo-asn-country-mmdb?color=success&style=flat-square&label=MMDB)](https://www.npmjs.com/package/@ip-location-db/geo-asn-country-mmdb) | Country | [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed) | Daily | [CSV](https://cdn.jsdelivr.net/npm/@ip-location-db/geo-asn-country/geo-asn-country-ipv4.csv)<br>[MMDB](https://cdn.jsdelivr.net/npm/@ip-location-db/geo-asn-country-mmdb/geo-asn-country-ipv4.mmdb) | [CSV](https://cdn.jsdelivr.net/npm/@ip-location-db/geo-asn-country/geo-asn-country-ipv6.csv)<br>[MMDB](https://cdn.jsdelivr.net/npm/@ip-location-db/geo-asn-country-mmdb/geo-asn-country-ipv6.mmdb) | [CSV](https://cdn.jsdelivr.net/npm/@ip-location-db/geo-asn-country/geo-asn-country-ipv4-num.csv) | [CSV](https://cdn.jsdelivr.net/npm/@ip-location-db/geo-asn-country/geo-asn-country-ipv6-num.csv) |
 
@@ -27,7 +27,7 @@ Please be careful when using IPv6 and IPv6-num files in your program, the numeri
 You can get the `country name, capital, continent, currency, languages, etc.` from the `country_code` by [Countries Database](https://github.com/annexare/Countries) in JSON, CSV, SQL format.
 
 
-## Referenced Database and License
+## Referenced Database
 
 
 
@@ -62,3 +62,8 @@ GeoFeed-Whois-ASN: 1.0.0.0, 2.0.0.0, AU
                    2.5.0.1, 3.0.0.0, IN
                    3.0.0.1, 4.0.0.0, US
 ```
+
+
+## License
+
+These files are subject to the Creative Commons Zero ([CC0](https://creativecommons.org/publicdomain/zero/1.0/deed)) license. You may use these databases without attribution for any purpose.

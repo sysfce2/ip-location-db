@@ -66,7 +66,7 @@ It depends upon your use-case! We do have some simple recommendations though:
 
 - If you need postcodes or timezones: `geolite2-city`
 - If you need city data with a CC-BY Licence: `dbip-city`
-- If you need a country database with a Public Domain licence: `geo-whois-asn-country`
+- If you need a country database with a Public Domain Licence: `geo-whois-asn-country`
 - If you need an ASN database: `asn`
 
 ## MMDB Libraries
