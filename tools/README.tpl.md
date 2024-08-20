@@ -2,13 +2,11 @@
 
 This project provides IP to location databases in CSV and MMDB formats.
 
-## Available database downloads
-
-There are 3 types of IP database in this repository: `country`, `asn` and `city` files. All have their own standard format. Please use the provided CDN links rather than directly linking to files in this repository.
+There are 3 types of IP database in this repository: `country`, `city` and `asn` files. All have their own standard format.
 
 ### Country
 
-${explanation-country}
+${format-country-csv}
 
 ${download-table-header}
 ${download-table-asn-country}
@@ -18,9 +16,18 @@ ${download-table-iptoasn-country}
 ${download-table-dbip-country}
 ${download-table-geolite2-country}
 
+### City
+
+${format-city-csv}
+
+${download-table-header}
+${download-table-dbip-city}
+${download-table-geolite2-city}
+
+
 ### ASN
 
-${explanation-asn}
+${format-asn-csv}
 
 ${download-table-header}
 ${download-table-asn}
@@ -28,19 +35,30 @@ ${download-table-iptoasn-asn}
 ${download-table-dbip-asn}
 ${download-table-geolite2-asn}
 
-### City
-
-${explanation-city}
-
-${download-table-header}
-${download-table-dbip-city}
-${download-table-geolite2-city}
 
 ## File formats
 
 An explanation of each file format is provided in its own directory.
 
 All files of a given type share the same file format; for example, you could swap one `asn` file for any other `asn` file.
+
+
+## Databases referenced in this project
+
+${explanation-db-asn}
+
+${explanation-db-whois}
+
+${explanation-db-geo}
+
+${explanation-db-routeviews}
+
+${explanation-db-iptoasn}
+
+${explanation-db-dbip}
+
+${explanation-db-geolite2}
+
 
 ## Which database should I use?
 
@@ -63,25 +81,31 @@ Libraries exist in many languages when using the MMDB files. There are official,
 
 If you wish to create your own MMDB files from the CSV files *(to customise their format)* there are a couple of official libraries: [Go](https://github.com/maxmind/mmdbwriter) and [Perl](https://github.com/maxmind/MaxMind-DB-Writer-perl) *(now archived)*. There are also some third-party options: [Python](https://github.com/VimT/MaxMind-DB-Writer-python) and [Rust](https://github.com/pierd/maxminddb-writer).
 
+
 ## Useful applications
 
-${applications-table-header}
-${applications-1}
-${applications-2}
-${applications-3}
-${applications-4}
+| Application | Language | Description | Types | IPv4 | IPv6 | Auto<br>Updates |
+|---|---|---|---|---|---|---|
+|[`ip_location_server`](https://github.com/EP-u-NW/ip_location_server) | Java | An in-memory GRPC and HTTP server mapping IP addresses to locations *(requires at least 1.5GB RAM)* | `country`<br>`asn`<br>`city` | ✓ | ✓ | ✓ |
+|[`ip-location-api`](https://github.com/paul-norman/ip-location-api) | Go | API server creating / supporting MMDB, PostgreSQL, MySQL / MariaDB and SQLite | `country`<br>`asn`<br>`city` | ✓ | ✓ | ✓ |
+|[`Ip-geo-API`](https://github.com/realchandan/Ip-geo-API) | Go | In-memory API server | `country`  | ✓ | ✓ | ✘ |
+|[`IPInfoOffline`](https://www.nirsoft.net/utils/ip_country_info_offline.html) | Windows  | Desktop tool showing information about IP addresses *(local data)* | `country`<br>`asn`<br>`city` | ✓ | ✓ | ✘ |
+
 
 ## Useful tools
 
-${tools-table-header}
-${tools-1}
-${tools-2}
+| Tool | Description |
+|---|---|
+|[`ip-location-to-mmdb`](https://github.com/paul-norman/ip-location-to-mmdb) | Basic conversion from CSV files from this database into MMDB files |
+|[`mmdbmeld`](https://github.com/safing/mmdbmeld) | Create and customise MMDB files from CSV files in this database |
+
 
 ## Licences
 
 The required licence depends upon the database which you use. **Please carefully read each database licence before use.**
 
 You can use [PDDL](https://opendatacommons.org/licenses/pddl/1.0/) (ODC Public Domain Dedication and Licence) or [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed) (Creative Commons Zero) licensed databases without attribution for any purpose.
+
 
 ## Support
 

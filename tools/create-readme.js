@@ -1,3 +1,4 @@
+const { info } = require('console');
 const fs	= require('fs');
 const path	= require('path');
 
@@ -13,18 +14,70 @@ for (const file of files) {
 }
 
 function mergeTemplates(templates, vars) {
-	const written = [];
-
+	const written = []
+	var templateContent = '';
+	templates.push(path.resolve(__dirname, 'README.tpl.md'));
 	for (const templatePath of templates) {
-		let templateContent = fs.readFileSync(templatePath, { encoding: 'utf8' });
+		console.log(templatePath)
+		if(templatePath.endsWith('.md')){
+			templateContent = fs.readFileSync(templatePath, { encoding: 'utf8' });
+		} else {
+			var info = templatePath.split('-')
+			templateContent = '# [ip-location-db](https://github.com/sapics/ip-location-db)/' + path.basename(templatePath) + '\n\n'
+			var type = info[info.length - 1]
+			var isMmdb = false
+			if(type === 'mmdb'){
+				isMmdb = true
+				type = info[info.length - 2]
+			}
+			
+			templateContent += '## Download\n\n'
+			templateContent += '${download-table-header}\n'
+			templateContent += '${download-table-' + templatePath.replace('-mmdb', '').replace('-7z', '') + '}\n'
+			if(!isMmdb){
+				templateContent += '\n\n## CSV Format\n\n'
+				templateContent += '${format-' + type + '-csv}\n'
+				templateContent += '${format-explanation-ip-range}\n'
+			} else {
+				templateContent += '\n\n## MMDB Format\n\n'
+				templateContent += '${format-' + type + '-mmdb}\n'
+			}
+			if(type === 'asn'){
+				templateContent += '\n\n${field-explanation-asn}\n'
+			} else {
+				templateContent += '\n\n${field-explanation-country_code}\n'
+			}
+
+			templateContent += '\n\n## Referenced Database and License\n\n'
+			var isMulti = true
+			for(var i = 0; i < info.length; i++){
+				var key = info[i]
+				if(key === type) {
+					if(i === 1) isMulti = false
+					break;
+				}
+				templateContent += '\n\n${explanation-db-'+key+'}\n\n'
+			}
+			if(templatePath === 'asn' || templatePath === 'asn-mmdb'){
+				templateContent += '\n${explanation-db-routeviews}\n\n'
+				templateContent += '\n${explanation-db-asn}\n\n'
+				templateContent += '\n${explanation-db-dbip}\n\n'
+			}
+
+			if(isMulti){
+				templateContent += '${merge-db}\n'
+			}
+		}
 
 		for (let [variable, value] of Object.entries(vars)) {
 			templateContent = templateContent.replaceAll('${' + variable + '}', value);
 		}
 
-		const outputPath = templatePath.replace('.tpl', '.md', 1);
+		var outputPath = templatePath.replace('.tpl', '').replace('tools/', '').replace('tools\\', '')
+		if(!templatePath.endsWith('.md')){
+			outputPath = path.join(projectPath, path.basename(templatePath), 'README.md')
+		}
 		fs.writeFileSync(outputPath, templateContent);
-
 		written.push(outputPath);
 	}
 
@@ -32,20 +85,12 @@ function mergeTemplates(templates, vars) {
 }
 
 function findTemplates() {
-	const paths = [];
-
-	const allPaths = getAllFiles(projectPath);
-	for (const filePath of allPaths) {
-		if (filePath.endsWith('.tpl')) {
-			paths.push(filePath);
-		}
-	}
-
-	return paths;
+	const allPaths = fs.readdirSync(projectPath), reg = /asn|country|city/
+	return allPaths.filter(dir => reg.test(dir))
 }
 
 function parseData() {
-	const text = fs.readFileSync(path.join(projectPath, 'README.data'), { encoding: 'utf8' });
+	const text = fs.readFileSync(path.join(__dirname, 'DATA.md'), { encoding: 'utf8' });
 
 	const output = {};
 
@@ -56,7 +101,6 @@ function parseData() {
 	for (const part of parts) {
 		const varData	= part.trim().split(re2);
 		const key		= varData[0].trim();
-
 		if (key.length) {
 			output[key] = varData[1].trim();
 		}
@@ -75,19 +119,4 @@ function parseData() {
 	}
 
 	return output;
-}
-
-function getAllFiles(dirPath, allFiles) {
-	allFiles = allFiles || [];
-	const files = fs.readdirSync(dirPath);
-
-	for (const file of files) {
-		if (fs.statSync(path.join(dirPath, file)).isDirectory()) {
-			allFiles = getAllFiles(path.join(dirPath, file), allFiles);
-		} else {
-			allFiles.push(path.join(dirPath, file));
-		}
-	}
-
-	return allFiles;
 }
