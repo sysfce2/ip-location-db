@@ -14,7 +14,9 @@ ${download-table-geo-asn-country}
 ${download-table-geo-whois-asn-country}
 ${download-table-iptoasn-country}
 ${download-table-dbip-country}
+${download-table-dbip-geo-whois-asn-country}
 ${download-table-geolite2-country}
+${download-table-geolite2-geo-whois-asn-country}
 
 ### City
 
@@ -67,6 +69,7 @@ It depends upon your use-case! We do have some simple recommendations though:
 - If you need postcodes or timezones: `geolite2-city`
 - If you need city data with a CC-BY Licence: `dbip-city`
 - If you need a country database with a Public Domain Licence: `geo-whois-asn-country`
+- If you need a high accuracy and wide IP range country database: `geolite2-geo-whois-asn-country` which is equivalent to `geolite2-country` for `geolite2-country` covered IP range and `geo-whois-asn-country` for the other IP range. (0.10% wider for IPv4 and 2.34% wider for IPv6 than `geolite2-country` at Aug. 2024)
 - If you need an ASN database: `asn`
 
 ## MMDB Libraries
