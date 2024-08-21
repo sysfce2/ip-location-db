@@ -85,6 +85,13 @@ Libraries exist in many languages when using the MMDB files. There are official,
 If you wish to create your own MMDB files from the CSV files *(to customise their format)* there are a couple of official libraries: [Go](https://github.com/maxmind/mmdbwriter) and [Perl](https://github.com/maxmind/MaxMind-DB-Writer-perl) *(now archived)*. There are also some third-party options: [Python](https://github.com/VimT/MaxMind-DB-Writer-python) and [Rust](https://github.com/pierd/maxminddb-writer).
 
 
+## Libraries
+
+| Library | Language | Description | Types | IPv4 | IPv6 | Auto<br>Updates |
+|---|---|---|---|---|---|---|
+|[`geoip-country`](https://github.com/sapics/geoip-country) | Node.js | Fast ip to country lookup by using in-memory database. (requires 10MB RAM) | `country` | ✓ | ✓ | ✓ |
+
+
 ## Useful applications
 
 | Application | Language | Description | Types | IPv4 | IPv6 | Auto<br>Updates |
