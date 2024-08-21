@@ -129,29 +129,29 @@ Libraries exist in many languages when using the MMDB files. There are official,
 If you wish to create your own MMDB files from the CSV files *(to customise their format)* there are a couple of official libraries: [Go](https://github.com/maxmind/mmdbwriter) and [Perl](https://github.com/maxmind/MaxMind-DB-Writer-perl) *(now archived)*. There are also some third-party options: [Python](https://github.com/VimT/MaxMind-DB-Writer-python) and [Rust](https://github.com/pierd/maxminddb-writer).
 
 
-## Libraries
+## Useful Libraries
 
-| Library | Language | Description | Types | IPv4 | IPv6 | Auto<br>Updates |
+| Library | Language | Description | Types | Auto<br>Updates |
 |---|---|---|---|---|---|---|
-|[`geoip-country`](https://github.com/sapics/geoip-country) | Node.js | Fast ip to country lookup by using in-memory database. (requires 10MB RAM) | `country` | ✓ | ✓ | ✓ |
+|[geoip-country](https://github.com/sapics/geoip-country) | Node.js | Fast ip to country lookup by using in-memory database. (requires 10MB RAM) | `country` | ✓ |
 
 
 ## Useful applications
 
-| Application | Language | Description | Types | IPv4 | IPv6 | Auto<br>Updates |
+| Application | Language | Description | Types | Auto<br>Updates |
 |---|---|---|---|---|---|---|
-|[`ip_location_server`](https://github.com/EP-u-NW/ip_location_server) | Java | An in-memory GRPC and HTTP server mapping IP addresses to locations *(requires at least 1.5GB RAM)* | `country`<br>`asn`<br>`city` | ✓ | ✓ | ✓ |
-|[`ip-location-api`](https://github.com/paul-norman/ip-location-api) | Go | API server creating / supporting MMDB, PostgreSQL, MySQL / MariaDB and SQLite | `country`<br>`asn`<br>`city` | ✓ | ✓ | ✓ |
-|[`Ip-geo-API`](https://github.com/realchandan/Ip-geo-API) | Go | In-memory API server | `country`  | ✓ | ✓ | ✘ |
-|[`IPInfoOffline`](https://www.nirsoft.net/utils/ip_country_info_offline.html) | Windows  | Desktop tool showing information about IP addresses *(local data)* | `country`<br>`asn`<br>`city` | ✓ | ✓ | ✘ |
+|[ip_location_server](https://github.com/EP-u-NW/ip_location_server) | Java | An in-memory GRPC and HTTP server mapping IP addresses to locations *(requires at least 1.5GB RAM)* | `country`<br>`asn`<br>`city` | ✓ |
+|[ip-location-api](https://github.com/paul-norman/ip-location-api) | Go | API server creating / supporting MMDB, PostgreSQL, MySQL / MariaDB and SQLite | `country`<br>`asn`<br>`city` | ✓ |
+|[Ip-geo-API](https://github.com/realchandan/Ip-geo-API) | Go | In-memory API server | `country` | ✘ |
+|[IPInfoOffline](https://www.nirsoft.net/utils/ip_country_info_offline.html) | Windows  | Desktop tool showing information about IP addresses *(local data)* | `country`<br>`asn`<br>`city` | ✘ |
 
 
 ## Useful tools
 
 | Tool | Description |
 |---|---|
-|[`ip-location-to-mmdb`](https://github.com/paul-norman/ip-location-to-mmdb) | Basic conversion from CSV files from this database into MMDB files |
-|[`mmdbmeld`](https://github.com/safing/mmdbmeld) | Create and customise MMDB files from CSV files in this database |
+|[ip-location-to-mmdb](https://github.com/paul-norman/ip-location-to-mmdb) | Basic conversion from CSV files from this database into MMDB files |
+|[mmdbmeld](https://github.com/safing/mmdbmeld) | Create and customise MMDB files from CSV files in this database |
 
 
 ## Licences
