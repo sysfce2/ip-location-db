@@ -88,14 +88,14 @@ If you wish to create your own MMDB files from the CSV files *(to customise thei
 ## Useful Libraries
 
 | Library | Language | Description | Types | Auto<br>Updates |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|
 |[geoip-country](https://github.com/sapics/geoip-country) | Node.js | Fast ip to country lookup by using in-memory database. (requires 10MB RAM) | `country` | ✓ |
 
 
 ## Useful applications
 
 | Application | Language | Description | Types | Auto<br>Updates |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|
 |[ip_location_server](https://github.com/EP-u-NW/ip_location_server) | Java | An in-memory GRPC and HTTP server mapping IP addresses to locations *(requires at least 1.5GB RAM)* | `country`<br>`asn`<br>`city` | ✓ |
 |[ip-location-api](https://github.com/paul-norman/ip-location-api) | Go | API server creating / supporting MMDB, PostgreSQL, MySQL / MariaDB and SQLite | `country`<br>`asn`<br>`city` | ✓ |
 |[Ip-geo-API](https://github.com/realchandan/Ip-geo-API) | Go | In-memory API server | `country` | ✘ |
