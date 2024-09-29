@@ -8810,6 +8810,7 @@
 2001:df4:5280::,2001:df4:5280:ffff:ffff:ffff:ffff:ffff,BD
 2001:df4:52c0::,2001:df4:52c0:ffff:ffff:ffff:ffff:ffff,BD
 2001:df4:5300::,2001:df4:5300:ffff:ffff:ffff:ffff:ffff,NZ
+2001:df4:5340::,2001:df4:5340:ffff:ffff:ffff:ffff:ffff,BD
 2001:df4:5380::,2001:df4:5380:ffff:ffff:ffff:ffff:ffff,BD
 2001:df4:5400::,2001:df4:5400:ffff:ffff:ffff:ffff:ffff,ID
 2001:df4:5480::,2001:df4:5480:ffff:ffff:ffff:ffff:ffff,IN
@@ -23652,7 +23653,7 @@
 2605:6540::,2605:6540:ffff:ffff:ffff:ffff:ffff:ffff,US
 2605:6580::,2605:6580:ffff:ffff:ffff:ffff:ffff:ffff,US
 2605:65c0::,2605:65c0:ffff:ffff:ffff:ffff:ffff:ffff,US
-2605:6600::,2605:6600:ffff:ffff:ffff:ffff:ffff:ffff,US
+2605:6600::,2605:660f:ffff:ffff:ffff:ffff:ffff:ffff,US
 2605:6640::,2605:6640:ffff:ffff:ffff:ffff:ffff:ffff,US
 2605:6680::,2605:6680:ffff:ffff:ffff:ffff:ffff:ffff,US
 2605:66c0::,2605:66c0:ffff:ffff:ffff:ffff:ffff:ffff,US
@@ -25973,6 +25974,7 @@
 2607:d740::,2607:d740:ffff:ffff:ffff:ffff:ffff:ffff,US
 2607:d780::,2607:d780:ffff:ffff:ffff:ffff:ffff:ffff,US
 2607:d7c0::,2607:d7c0:ffff:ffff:ffff:ffff:ffff:ffff,US
+2607:d840::,2607:d840:ffff:ffff:ffff:ffff:ffff:ffff,US
 2607:d880::,2607:d880:ffff:ffff:ffff:ffff:ffff:ffff,CA
 2607:d900::,2607:d900:ffff:ffff:ffff:ffff:ffff:ffff,US
 2607:d980::,2607:d980:ffff:ffff:ffff:ffff:ffff:ffff,US
