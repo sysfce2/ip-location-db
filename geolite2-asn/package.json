@@ -23,6 +23,6 @@
     "url": "git+https://github.com/sapics/ip-location-db.git"
   },
   "CUSTOME_FIELDS": {
-    "geolite2_hash_asn": "e4e6336456203d895cf36568e3afed384e198280577f39718f83851c3bf4907f"
+    "geolite2_hash_asn": "a9efbd2e917f596cc974f25e2cb41796b11486205bb4efa1d183dcd42ad490e7"
   }
 }

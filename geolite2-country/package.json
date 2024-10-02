@@ -1,6 +1,6 @@
 {
   "name": "@ip-location-db/geolite2-country",
-  "version": "2.3.2024092818",
+  "version": "2.3.2024100218",
   "description": "Ip to location database",
   "keywords": [
     "ip",
@@ -22,6 +22,6 @@
     "url": "git+https://github.com/sapics/ip-location-db.git"
   },
   "CUSTOME_FIELDS": {
-    "geolite2_hash_country": "8d92c009db38a1c65f297d5ea6528beb45f6644cea2dde0beb671f166fcd378a"
+    "geolite2_hash_country": "27d605744f61913bea8ac335d7f1be97dd0cf92d5026c72696617792259eb4a9"
   }
 }
