@@ -124,13 +124,13 @@ By comparing the database in GeoLite2, which is well known for its high accuracy
 
 | Database | Same | Diff | Empty | Extra |
 | ---- | ---- | ---- | ---- | ---- |
-| dbip-country | 96.18% | 3.82% | 0.00% | 0.42% |
-| asn-country | 96.04% | 3.93% | 0.03% | 0.03% |
-| geo-asn-country | 97.16% | 2.81% | 0.03% | 0.03% |
-| geo-whois-asn-country | 96.85% | 3.12% | 0.03% | 0.10% |
-| iptoasn-country | 76.99% | 4.96% | 18.06% | 1.45% |
+| dbip-country | 96.15% | 3.85% | 0.00% | 0.42% |
+| asn-country | 95.97% | 4.00% | 0.03% | 0.03% |
+| geo-asn-country | 97.26% | 2.71% | 0.03% | 0.06% |
+| geo-whois-asn-country | 96.98% | 2.99% | 0.03% | 0.12% |
+| iptoasn-country | 76.80% | 4.99% | 18.21% | 1.26% |
 
-Measurements were taken in 11 Sep. 2024.
+Measurements were taken in 9 Oct. 2024.
 Because the ipv6 range is too wide, the measurements here are limited to ipv4 results.
 "Same" + "Diff" + "Empty" shows the GeoLite2 IP-range, and the GeoLite2 IP-range size is listed as 100%.
 
